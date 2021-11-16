@@ -14,10 +14,10 @@ class bag{
         void insert(const value_type &entry);
         void operator+=(const bag &addend);
         void operator=(const bag &addend);
-        size_type size() const(return many_nodes);//inline함수임
+        size_type size() const{return many_nodes;}//inline함수임
         size_type count(const value_type &target) const;
         value_type grab() const;
-   임
+   
     private:
         node *head_ptr;
         size_type many_nodes;

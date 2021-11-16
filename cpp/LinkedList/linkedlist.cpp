@@ -1,18 +1,19 @@
 #include "linkedlist.h"
+#include<cassert>
 
 using namespace std;
 
 std::size_t list_length(const node *head_ptr){
     size_t number=0;
 
-    while(head_ptr!=null){
+    while(head_ptr!=NULL){
         head_ptr = head_ptr->link();
         number++;
     }
     return number;
 }
 void list_head_insert(node *previous_ptr,const node::value_type &entry){
-    previous_ptr = new node(entry, previoust_ptr);
+    previous_ptr = new node(entry, previous_ptr);
 }
 void list_insert(node *previous_ptr, const node::value_type &entry){
     node *insert_ptr;
